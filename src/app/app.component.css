@@ -1,0 +1,278 @@
+.MyBody{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   min-width: 100%;
+   -ms-overflow-style: none; 
+   scrollbar-width: none; 
+   overflow-y: scroll;
+}
+.objective{
+   color: white;
+   font-size: 200%;
+   
+}
+
+.Bar{
+   font-size: large;
+   font-weight: 700;
+   cursor: pointer;
+   margin-left: 3%;
+
+}
+
+.firstImg{
+   border-radius: 10% 10% 10% 10%;
+    box-shadow: 8px 8px 20px 0px  rgb(2 255 250);
+    text-align: center;
+    width: 50%;
+    height: 60%;
+}
+
+.secondImg{
+   border-radius: 50%;
+   width: 25vh;
+   height: 30vh;
+   margin-top: 2%;
+}
+
+.LogoB{
+   background-color: unset;
+   color: rgb(2 255 250);
+   border-radius: 50%;
+   border: 1px solid rgb(2 255 250);
+   height: 100%;
+   width: 5vh;
+   font-size: medium;
+   font-weight: 600;
+   text-align: center;
+}
+
+.download{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 10vh;
+    font-size: medium;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px 5px var(--primary-color);
+    border : none
+}
+
+
+.cancel{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(2,255,250,0.2);
+    color: rgb(2 275 270);
+    border-radius: 10vh;
+    border: 1px solid rgb(2 255 250);
+    font-size: medium;
+    font-weight: 500;
+}
+
+.flip-card {
+   background-color: transparent;
+   width: 70%;
+   height: 100%;
+   perspective: 750px;
+ }
+ 
+ .flip-card-inner {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 1s;
+   transform-style: preserve-3d;
+ }
+ 
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ 
+ .flip-card-front {
+   background-color: unset;
+   color: white;
+   border: 1px solid var(--primary-color);
+   border-radius: 5vh 5vh 5vh 5vh;
+   box-shadow: 0px 0px 10px 5px var(--primary-color);
+ }
+ 
+ .flip-card-back {
+   color: white;
+   background-color: unset;
+   border: 1px solid var(--primary-color);
+   border-radius: 5vh 5vh 5vh 5vh;;
+   transform: rotateY(180deg);
+   box-shadow: 0px 0px 70px 7px var(--primary-color);
+
+ }
+
+
+ .ExperienceButton{
+      height: 15%;
+      width: 30%;
+      text-align: center;
+      background-color: var(--primary-color);
+      border-radius: 10vh;
+      font-size: medium;
+      font-weight: 500;
+      box-shadow: 0px 0px 2px 2px var(--primary-color);
+      border : none
+ }
+
+ #progressbar {
+   background-color: black;
+   border-radius: 13px 13px 13px 13px;
+   width: 50%;
+   /* padding: 3px; */
+ }
+ 
+ #progressbar #innerProgressbar1 {
+   background-color: var(--primary-color);
+   width: 95%;
+   height: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 18px 0px var(--primary-color);
+ }
+
+ #progressbar #innerProgressbar2 {
+   background-color: var(--primary-color);
+   width: 90%;
+   height: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 18px 0px var(--primary-color);
+ }
+
+ #progressbar #innerProgressbar3 {
+   background-color: var(--primary-color);
+   width:78%;
+   height: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 18px 0px var(--primary-color);
+ }
+
+
+ .skills{
+    width: 15%;
+    height: 50%;
+    border: 1px solid var(--primary-color);
+    border-radius: 25px 25px 25px 25px;
+    background-color: unset;
+    color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 700;
+ }
+
+
+ .skills:hover{
+   width: 15%;
+   height: 50%;
+   border-radius: 25px 25px 25px 25px;
+   background-color: var(--primary-color);
+   color: black;
+   text-align: center;
+   align-items: center;
+   display: flex;
+   position: relative;
+   cursor: pointer;
+   box-shadow: 0px 0px 8px 5px var(--primary-color);
+   border : none;
+   font-size: large;
+   font-weight: 700;
+}
+
+input{
+   height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    color: black;
+}
+
+input,
+input::placeholder {
+    font: 2vh sans-serif;
+}
+
+textarea{
+   height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    color: black;
+}
+
+textarea,
+textarea::placeholder {
+    font: 2vh sans-serif;
+}
+
+
+.Send{
+   height: 100%;
+   width: 30%;
+   text-align: center;
+   background-color: var(--primary-color);
+   border-radius: 10vh;
+   font-size: medium;
+   font-weight: 500;
+   box-shadow: 0px 0px 10px 5px var(--primary-color);
+   border : none
+}
+
+.scrollToTop{
+   display: flex;
+   position: fixed;
+   width: 6vh;
+   border-radius: 1vh;
+   height: 6vh;
+   background-color: unset;
+   cursor: pointer;
+   border-color: var(--primary-color) ;
+   z-index: 1;
+   bottom: 20px;
+   right: 7vh;
+   padding: 15px; 
+   text-align: -webkit-center;   
+   box-shadow: 0px 0px 7px 3px var(--primary-color);
+}
+
+.sidNav{
+   display: flex;
+   position: fixed;
+   background-color: rgba(2 ,255 ,250,0.555);
+   width: 15vh;
+   height: 4vh;
+   bottom: 50vh;
+   margin-left: 206vh;
+   cursor: pointer;
+   align-items: center;
+}
+
+.line-pdf{
+   background-color: black;
+   height: 3.5px;
+   width: 100%;
+}
+
+.header{
+   font-size: 30px;
+   font-weight: 900;
+}
+
+.min-header{
+   font-size: 20px;
+   font-weight: 900;
+}

@@ -1,0 +1,41 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+:root{
+    --primary-color: rgb(2 255 250);
+    --second-color : rgba(18, 96, 95)
+}
+
+html,body{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+ }
+
+ canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+ }
+
+
+ .mdc-tab__text-label{
+   color: white !important;
+   font-size: large;
+   font-weight: 700;
+}
+
+.mdc-tab-indicator{
+   display: none !important;
+}
+ 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
