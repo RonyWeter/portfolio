@@ -1,42 +1,25 @@
-.MyBody{
+.MyBody {
    position: relative;
    height: 100%;
    width: 100%;
    min-width: 100%;
-   -ms-overflow-style: none; 
-   scrollbar-width: none; 
+   -ms-overflow-style: none;
+   scrollbar-width: none;
    overflow-y: scroll;
 }
-.objective{
+.objective {
    color: white;
    font-size: 200%;
-   
-}
-
-.Bar{
-   font-size: large;
-   font-weight: 700;
-   cursor: pointer;
-   margin-left: 3%;
 
 }
-
-.firstImg{
-   border-radius: 10% 10% 10% 10%;
-    box-shadow: 8px 8px 20px 0px  rgb(2 255 250);
-    text-align: center;
-    width: 50%;
-    height: 60%;
-}
-
-.secondImg{
+.secondImg {
    border-radius: 50%;
    width: 25vh;
    height: 30vh;
    margin-top: 2%;
 }
 
-.LogoB{
+.LogoB {
    background-color: unset;
    color: rgb(2 255 250);
    border-radius: 50%;
@@ -48,29 +31,29 @@
    text-align: center;
 }
 
-.download{
-    height: 100%;
-    width: 50%;
-    text-align: center;
-    background-color: var(--primary-color);
-    border-radius: 10vh;
-    font-size: medium;
-    font-weight: 500;
-    box-shadow: 0px 0px 10px 5px var(--primary-color);
-    border : none
+.download {
+   height: 100%;
+   width: 50%;
+   text-align: center;
+   background-color: var(--primary-color);
+   border-radius: 10vh;
+   font-size: medium;
+   font-weight: 500;
+   box-shadow: 0px 0px 10px 5px var(--primary-color);
+   border: none
 }
 
 
-.cancel{
-    height: 100%;
-    width: 30%;
-    text-align: center;
-    background-color: rgba(2,255,250,0.2);
-    color: rgb(2 275 270);
-    border-radius: 10vh;
-    border: 1px solid rgb(2 255 250);
-    font-size: medium;
-    font-weight: 500;
+.cancel {
+   height: 100%;
+   width: 30%;
+   text-align: center;
+   background-color: rgba(2, 255, 250, 0.2);
+   color: rgb(2 275 270);
+   border-radius: 10vh;
+   border: 1px solid rgb(2 255 250);
+   font-size: medium;
+   font-weight: 500;
 }
 
 .flip-card {
@@ -78,105 +61,107 @@
    width: 70%;
    height: 100%;
    perspective: 750px;
- }
- 
- .flip-card-inner {
+}
+
+.flip-card-inner {
    width: 100%;
    height: 100%;
    text-align: center;
    transition: transform 1s;
    transform-style: preserve-3d;
- }
- 
- .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
    position: absolute;
    width: 100%;
    height: 100%;
    -webkit-backface-visibility: hidden;
    backface-visibility: hidden;
- }
- 
- .flip-card-front {
+}
+
+.flip-card-front {
    background-color: unset;
    color: white;
    border: 1px solid var(--primary-color);
    border-radius: 5vh 5vh 5vh 5vh;
    box-shadow: 0px 0px 10px 5px var(--primary-color);
- }
- 
- .flip-card-back {
+}
+
+.flip-card-back {
    color: white;
    background-color: unset;
    border: 1px solid var(--primary-color);
-   border-radius: 5vh 5vh 5vh 5vh;;
+   border-radius: 5vh 5vh 5vh 5vh;
+   ;
    transform: rotateY(180deg);
    box-shadow: 0px 0px 70px 7px var(--primary-color);
 
- }
+}
 
 
- .ExperienceButton{
-      height: 15%;
-      width: 30%;
-      text-align: center;
-      background-color: var(--primary-color);
-      border-radius: 10vh;
-      font-size: medium;
-      font-weight: 500;
-      box-shadow: 0px 0px 2px 2px var(--primary-color);
-      border : none
- }
+.ExperienceButton {
+   height: 15%;
+   width: 30%;
+   text-align: center;
+   background-color: var(--primary-color);
+   border-radius: 10vh;
+   font-size: medium;
+   font-weight: 500;
+   box-shadow: 0px 0px 2px 2px var(--primary-color);
+   border: none
+}
 
- #progressbar {
+#progressbar {
    background-color: black;
    border-radius: 13px 13px 13px 13px;
    width: 50%;
    /* padding: 3px; */
- }
- 
- #progressbar #innerProgressbar1 {
+}
+
+#progressbar #innerProgressbar1 {
    background-color: var(--primary-color);
    width: 95%;
    height: 20px;
    border-radius: 10px;
    box-shadow: 0px 0px 18px 0px var(--primary-color);
- }
+}
 
- #progressbar #innerProgressbar2 {
+#progressbar #innerProgressbar2 {
    background-color: var(--primary-color);
    width: 90%;
    height: 20px;
    border-radius: 10px;
    box-shadow: 0px 0px 18px 0px var(--primary-color);
- }
+}
 
- #progressbar #innerProgressbar3 {
+#progressbar #innerProgressbar3 {
    background-color: var(--primary-color);
-   width:78%;
+   width: 78%;
    height: 20px;
    border-radius: 10px;
    box-shadow: 0px 0px 18px 0px var(--primary-color);
- }
+}
 
 
- .skills{
-    width: 15%;
-    height: 50%;
-    border: 1px solid var(--primary-color);
-    border-radius: 25px 25px 25px 25px;
-    background-color: unset;
-    color: var(--primary-color);
-    text-align: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    font-size: large;
-    font-weight: 700;
- }
+.skills {
+   width: 15%;
+   height: 50%;
+   border: 1px solid var(--primary-color);
+   border-radius: 25px 25px 25px 25px;
+   background-color: unset;
+   color: var(--primary-color);
+   text-align: center;
+   align-items: center;
+   display: flex;
+   position: relative;
+   cursor: pointer;
+   font-size: large;
+   font-weight: 700;
+}
 
 
- .skills:hover{
+.skills:hover {
    width: 15%;
    height: 50%;
    border-radius: 25px 25px 25px 25px;
@@ -188,39 +173,39 @@
    position: relative;
    cursor: pointer;
    box-shadow: 0px 0px 8px 5px var(--primary-color);
-   border : none;
+   border: none;
    font-size: large;
    font-weight: 700;
 }
 
-input{
+input {
    height: 100%;
-    width: 100%;
-    background-color: lightgray;
-    border: none;
-    color: black;
+   width: 100%;
+   background-color: lightgray;
+   border: none;
+   color: black;
 }
 
 input,
 input::placeholder {
-    font: 2vh sans-serif;
+   font: 2vh sans-serif;
 }
 
-textarea{
+textarea {
    height: 100%;
-    width: 100%;
-    background-color: lightgray;
-    border: none;
-    color: black;
+   width: 100%;
+   background-color: lightgray;
+   border: none;
+   color: black;
 }
 
 textarea,
 textarea::placeholder {
-    font: 2vh sans-serif;
+   font: 2vh sans-serif;
 }
 
 
-.Send{
+.Send {
    height: 100%;
    width: 30%;
    text-align: center;
@@ -229,30 +214,30 @@ textarea::placeholder {
    font-size: medium;
    font-weight: 500;
    box-shadow: 0px 0px 10px 5px var(--primary-color);
-   border : none
+   border: none;
+   animation: bouns 1.5s infinite;
 }
 
-.scrollToTop{
+.scrollToTop {
    display: flex;
    position: fixed;
-   width: 6vh;
    border-radius: 1vh;
    height: 6vh;
    background-color: unset;
    cursor: pointer;
-   border-color: var(--primary-color) ;
+   border-color: var(--primary-color);
    z-index: 1;
    bottom: 20px;
    right: 7vh;
-   padding: 15px; 
-   text-align: -webkit-center;   
+   padding: 15px;
+   text-align: -webkit-center;
    box-shadow: 0px 0px 7px 3px var(--primary-color);
 }
 
-.sidNav{
+.sidNav {
    display: flex;
    position: fixed;
-   background-color: rgba(2 ,255 ,250,0.555);
+   background-color: rgba(2, 255, 250, 0.555);
    width: 15vh;
    height: 4vh;
    bottom: 50vh;
@@ -261,18 +246,193 @@ textarea::placeholder {
    align-items: center;
 }
 
-.line-pdf{
+.line-pdf {
    background-color: black;
    height: 3.5px;
    width: 100%;
 }
 
-.header{
+.header {
+   font-size: 40px;
+   font-weight: 900;
+}
+
+.min-header {
    font-size: 30px;
    font-weight: 900;
 }
 
-.min-header{
-   font-size: 20px;
+.max-text {
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.min-text {
+   font-size: 25px;
+   font-weight: black;
+}
+
+.max-header {
+   font-size: 80px;
    font-weight: 900;
+}
+
+li {
+   line-height: 1.5em
+}
+
+/* .bouns{
+   animation: pulse infinite;
+   animation-duration: 1.5s
+} */
+
+@keyframes bouns {
+   0% {
+      transform: scale(1);
+   }
+
+   50% {
+      transform: scale(1.1);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+/* Mobile */
+@media(max-width: 992px) {
+   .navBar {
+      z-index: 1;
+      position: fixed;
+      width: 100%;
+      height: 5vh;
+      align-items: center;
+      margin-top: 2vh;
+   }
+
+   .allBar {
+      text-align: end;
+      margin-right: 1vh;
+   }
+
+   .Bar {
+      font-size: 1.8vh;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 1.5vh;
+   }
+
+   .homeStyle {
+      position: relative;
+      top: 5vh;
+      width: 100%;
+      height: 100%;
+   }
+
+   .firstImg {
+      border-radius: 10% 10% 10% 10%;
+      box-shadow: 8px 8px 20px 0px rgb(2 255 250);
+      text-align: center;
+      width: 40vh;
+      height: 35vh;
+      margin-top: 5vh;
+   }
+
+   .hiThere{
+      font-size: 2.5vh;
+      font-weight: 500;
+   }
+   .rony{
+      font-size: 4vh;
+      font-weight: 700;
+      margin-top: 1%;
+   }
+   .fullstack{
+      font-size: 2.5vh;
+      font-weight: 500;
+      font-weight: 700;
+      width: 70vh;
+   }
+   .textNextImage{
+      margin-top: 4vh;
+      text-align: center;
+   }
+}
+
+
+/* Website */
+@media(min-width: 992px) {
+   .navBar {
+      z-index: 1;
+      position: fixed;
+      width: 100%;
+      height: 5vh;
+      align-items: center;
+      margin-top: 2vh;
+   }
+
+   .allBar {
+      text-align: end;
+      margin-right: 5vh;
+   }
+
+   .Bar {
+      font-size: 3vh;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 3vh;
+   }
+
+   .homeStyle {
+      position: relative;
+      top: 22vh;
+      width: 100%;
+      height: 90%;
+   }
+
+   .firstImg {
+      border-radius: 10% 10% 10% 10%;
+      box-shadow: 8px 8px 20px 0px rgb(2 255 250);
+      text-align: center;
+      width: 50vh;
+      height: 40vh;
+   }
+
+   .hiThere{
+      font-size: 3vh;
+      font-weight: 500;
+   }
+   .rony{
+      font-size: 5vh;
+      font-weight: 700;
+      margin-top: 1%;
+   }
+   .fullstack{
+      font-size: 2.5vh;
+      font-weight: 500;
+      font-weight: 700;
+      width: 70vh;
+   }
+   .textNextImage{
+      margin-top: 4vh;
+      text-align: start;
+   }
+}
+
+
+.fadeImage {
+   animation: fadeInAnimation ease 5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
