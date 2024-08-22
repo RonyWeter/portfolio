@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "render-build":"npm config set legacy-peer-deps true && npm install && npm run build",
+    "render-build":"npm install --legacy-peer-deps true && npm run build:angular",
+    "build:angular":"ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
