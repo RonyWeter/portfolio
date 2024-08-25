@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsModule } from '@angular/forms';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {LocationStrategy,PathLocationStrategy} from '@angular/common'
 
 
 
@@ -22,7 +23,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     FormsModule,
     MatSidenavModule
   ],
-  providers: [],
+  providers: [{provide:LocationStrategy,useClass:PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
