@@ -324,9 +324,9 @@ li {
    }
 
    .homeStyle {
-      position: relative;
+      position: fixed;
       top: 5vh;
-      width: 100%;
+      width: 99%;
       height: 100%;
    }
 
