@@ -1,0 +1,134 @@
+<div class="projects-section">
+    <div class="container">
+        <div class="row text-center mb-4" #projectTitleSection style="margin-top: 8%;"
+            [ngClass]="{ 'hidden-before-visible': !projectTitleSection_isVisible, 'visible scroll-up': projectTitleSection_isVisible }">
+            <span class="selectedWork">SELECTED WORK</span>
+        </div>
+        <div class="row mt-2 text-center" [ngClass]="{ 'hidden-before-visible': !projectTitleSection_isVisible, 'visible scroll-up': projectTitleSection_isVisible }">
+            <h1 class="projectTitle">Projects that define</h1>
+            <h1 class="craft">my craft</h1>
+        </div>
+        <div class="row mt-4 text-center" [ngClass]="{ 'hidden-before-visible': !projectTitleSection_isVisible, 'visible scroll-up': projectTitleSection_isVisible }">
+            <p class="project-title-description">A curated collection of projects showcasing my expertise in
+                building
+                modern, scalable applications across
+                various domains.</p>
+        </div>
+        <div class="row mt-4" #eKycSection [ngClass]="{ 'hidden-before-visible': !eKycSection_isVisible, 'visible scroll-up': eKycSection_isVisible }">
+            <div class="col-lg-6 mb-4">
+                <img src="../../../assets/images/e-kyc.jpg">
+            </div>
+            <div class="col-lg-6">
+                <div class="row mt-2">
+                    <span class="selectedWork">Full-Stack Application</span>
+                </div>
+                <div class="row mt-3">
+                    <span class="projectName">E-KYC Platform</span>
+                </div>
+                <div class="row mt-3">
+                    <p class="project-description">A secure and user-friendly online KYC system that enables customers
+                        to open bank accounts
+                        remotely. The platform allows users to fill in personal information, upload identification
+                        documents (ID or passport), and capture a live selfie for identity verification. Additionally,
+                        users can upload an image of their signature to complete the verification process.
+                        Built with a focus on security, smooth user experience, and efficient data processing for
+                        banking compliance.</p>
+                </div>
+                <div class="row mt-2 gx-3">
+                    <div class="col-auto" *ngFor="let item of ekycList">
+                        <button mat-raised-button class="projectSkills">{{ item }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" #kycSection [ngClass]="{ 'hidden-before-visible': !kycSection_isVisible, 'visible scroll-up': kycSection_isVisible }">
+            <div class="col-lg-6 mb-4">
+                <img src="../../../assets/images/KYC_banking.jpg">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mt-2">
+                    <span class="selectedWork">Full-Stack Application</span>
+                </div>
+                <div class="row mt-3">
+                    <span class="projectName">Bank KYC System</span>
+                </div>
+                <div class="row mt-3">
+                    <p class="project-description">A comprehensive yet user-friendly system designed for banks to
+                        onboard
+                        customers efficiently.
+                        This platform enables users to create bank accounts by submitting their personal information
+                        securely online. Customers can upload identification documents like IDs or passports, provide a
+                        live selfie for facial verification, and submit an image of their signature to complete the
+                        process. Built with a strong emphasis on security, compliance, and seamless user experience,
+                        this system streamlines customer verification while ensuring data accuracy and regulatory
+                        adherence.</p>
+                </div>
+                <div class="row mt-2 gx-3">
+                    <div class="col-auto" *ngFor="let item of ekycList">
+                        <button mat-raised-button class="projectSkills">{{ item }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" #carSection [ngClass]="{ 'hidden-before-visible': !carSection_isVisible, 'visible scroll-up': carSection_isVisible }">
+            <div class="col-lg-6 mb-4">
+                <img src="../../../assets/images/image.png">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mt-2">
+                    <span class="selectedWork">Full-Stack Application</span>
+                </div>
+                <div class="row mt-3">
+                    <span class="projectName">Car Listing Platform</span>
+                </div>
+                <div class="row mt-3">
+                    <p class="project-description">A user-friendly and efficient web platform that allows clients to add
+                        and manage cars for sale. Clients can upload a main image, multiple sub-images, and detailed
+                        specifications for each car—such as model, year, condition, mileage, engine type, and more. Once
+                        added, users can browse a well-organized list of cars, each displayed with its images and key
+                        details. The system is built with a focus on simplicity, speed, and scalability, offering a
+                        smooth experience for both car owners and potential buyers.</p>
+                </div>
+                <div class="row mt-2 gx-3">
+                    <div class="col-auto" *ngFor="let item of carList">
+                        <button mat-raised-button class="projectSkills">{{ item }}</button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div>
+                        <button mat-raised-button class="accessProject" (click)="openProject()">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" style="margin-bottom: 5rem;" #loanSection [ngClass]="{ 'hidden-before-visible': !loanSection_isVisible, 'visible scroll-up': loanSection_isVisible }">
+            <div class="col-lg-6 mb-4">
+                <img src="../../../assets/images/loan-image.jpg">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="row mt-2">
+                    <span class="selectedWork">Front-End Development</span>
+                </div>
+                <div class="row mt-3">
+                    <span class="projectName">Bank Loan Management System</span>
+                </div>
+                <div class="row mt-3">
+                    <p class="project-description">As a Senior Front-End Developer, I contributed to building a robust
+                        and user-friendly loan management platform for a leading bank. This system streamlines the
+                        entire loan application process — from user onboarding and eligibility checks to document
+                        submission and loan tracking. I focused on delivering a smooth, responsive user interface that
+                        ensures a seamless experience across devices. The platform emphasizes clarity, performance, and
+                        accessibility, supporting both customers and bank staff in managing loan applications
+                        efficiently and securely.</p>
+                </div>
+                <div class="row mt-2 gx-3">
+                    <div class="col-auto" *ngFor="let item of loanList">
+                        <button mat-raised-button class="projectSkills mb-2">{{ item }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

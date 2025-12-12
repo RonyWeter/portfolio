@@ -1,0 +1,110 @@
+.main-section {
+    background: radial-gradient(circle at center, rgba(199, 199, 199, 0.2) 0%, rgba(255, 255, 255, 0) 70%),
+        linear-gradient(to bottom, #020617, #0f172a, #1e1b4b);
+    width: 100%;
+    height: 100%;
+}
+
+.available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: unset;
+    height: 50px;
+    color: var(--silver-color);
+    gap: 5px;
+    min-width: 250px;
+    border: 1px solid gray;
+    font-size: medium !important;
+}
+
+.animateIcon {
+    color: var(--green-check-color) !important;
+    font-size: x-small !important;
+    animation: pulse 1.7s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
+
+.title h1 {
+    color: white;
+    font-size: clamp(3.5rem, 5vw, 4rem);
+    font-weight: bold;
+}
+
+.title .gradient-text {
+    background: linear-gradient(100deg, var(--blue-color) 0%, var(--violet-color) 125%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(4.5rem, 5vw, 4rem);
+    font-weight: bold;
+}
+
+.narrow-paragraph {
+    max-width: 800px;
+    /* color: var(--silver-color); */
+    color: var(--light-text);
+    font-size: clamp(1.5rem, 1vw, 1rem);
+    line-height: 1.2;
+}
+
+.view {
+    border-radius: 20px;
+    height: 50px;
+    background: linear-gradient(100deg, var(--blue-color) 0%, var(--violet-color) 125%) !important;
+    min-width: 200px;
+    color: white;
+    font-size: medium;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons .view {
+  margin-right: 30px;
+}
+
+.buttons .icons {
+  margin-right: 15px;
+}
+
+.icons {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 30px;
+    border: 0.1px solid rgba(214, 214, 214,0.1);
+    color: var(--light-text);
+    background-color: rgb(255 255 255 / 0.05);
+}
+
+.animate-button {
+  animation: bounce 1.5s infinite;
+  cursor: unset;
+  position: relative;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -10px; /* Move up */
+  }
+}

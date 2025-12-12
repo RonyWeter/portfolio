@@ -1,0 +1,137 @@
+.toolbar {
+  background-color: var(--primary-color);
+  height: 12%;
+  z-index: 100;
+  top: 0;
+  box-shadow: none !important;
+  position: relative;
+  display: flex;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 8px 1px var(--violet-color);
+}
+
+.title {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_name {
+  background: linear-gradient(45deg, var(--violet-color), var(--blue-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_actions_website {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 50px;
+  gap: 20px;
+  color: rgb(223, 223, 223);
+}
+
+.menu_actions_website span {
+  cursor: pointer;
+}
+
+.menu_actions_mobile {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 25px;
+  gap: 20px;
+  color: rgb(223, 223, 223);
+  font-size: larger;
+}
+
+button {
+  background: linear-gradient(100deg, var(--blue-color) 0%, var(--violet-color) 125%) !important;
+  left: 25px;
+  color: white !important;
+  border-radius: 20px !important;
+  min-width: 120px;
+}
+
+.mobileMenuSection {
+  background-color: var(--primary-color);
+  /* height: 88%; */
+  height: auto;
+  color: var(--silver-color);
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  z-index: 8;
+  box-shadow: 0px 1px 6px 0px black;
+  top: 12%;
+}
+
+.menuItem {
+  cursor: pointer;
+  height: 50px;
+  width: 90%;
+  display: flex;
+  left: 25px;
+  align-items: center;
+  position: relative;
+  font-size: larger;
+}
+
+label {
+  color: var(--text-color);
+}
+
+.menuItem:hover {
+  background-color: var(--hover-color);
+  border-radius: 4px;
+}
+
+/* mobile */
+@media(max-width: 920px) {
+  .menu_actions_website {
+    display: none;
+  }
+}
+
+/* website */
+@media(min-width: 920px) {
+  .menu_actions_mobile {
+    display: none;
+  }
+  .mobileMenuSection{
+    display: none;
+  }
+}
+
+
+.content {
+  position: relative;
+  height: 88%;
+  max-height: auto;
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.menu_actions_website span:hover{
+  color: var(--violet-color);
+}
+
+.menuItem span:hover{
+  color: var(--violet-color);
+}

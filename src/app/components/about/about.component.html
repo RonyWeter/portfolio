@@ -1,0 +1,94 @@
+<div class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 margin">
+                <label>ABOUT ME</label>
+            </div>
+        </div>
+        <div class="row mt-4 title" style="height: 100%">
+            <div class="col-lg-6" #titleSection [ngClass]="{ 'hidden-before-visible': !titleSection_isVisible, 'visible slide-from-left': titleSection_isVisible }">
+                <div class="col-lg-12 buttomText">
+                    <h1>Turning ideas into</h1>
+                </div>
+                <div class="col-lg-12">
+                    <h1 class="digital">digital reality</h1>
+                </div>
+                <div class="col-lg-12" style="margin-top: 10%;">
+                    <p class="about-description">Full Stack Developer with a Bachelor's degree in Computer Science from the Lebanese University,
+                         specializing in software development. With years of hands-on experience, I build scalable, 
+                         user-centric web applications — from responsive frontends to robust backend systems. 
+                         Passionate about clean, maintainable code and elegant design, 
+                         I thrive on solving real-world problems through technology. 
+                         Outside of coding, I explore new tech, contribute to open-source, and enjoy sharing knowledge with the community.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center" #descriptionSection [ngClass]="{ 'hidden-before-visible': !descriptionSection_isVisible, 'visible slide-from-right': descriptionSection_isVisible }">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="section">
+                            <div class="container">
+                                <div class="col-lg-12">
+                                    <button class="icon"><i class="fa-solid fa-code"></i></button>
+                                    
+                                </div>
+                                <div class="col-lg-12 mt-4 box-title">
+                                    Clean Code
+                                </div>
+                                <div class="col-lg-12 mt-2">
+                                    <p class="box-description">Writing maintainable, scalable code that stands the test of time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="section">
+                            <div class="container">
+                                <div class="col-lg-12">
+                                    <button class="icon"><i class="fa-solid fa-lightbulb"></i></button>
+                                </div>
+                                <div class="col-lg-12 mt-4 box-title">
+                                    Innovation
+                                </div>
+                                <div class="col-lg-12 mt-2">
+                                    <p class="box-description">Always exploring new technologies and pushing boundaries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <div class="section">
+                            <div class="container">
+                                <div class="col-lg-12">
+                                    <button class="icon"><i class="fa-solid fa-user-group"></i></button>
+                                </div>
+                                <div class="col-lg-12 mt-4 box-title">
+                                    Collaboration
+                                </div>
+                                <div class="col-lg-12 mt-2">
+                                    <p class="box-description">Building great products through effective teamwork</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="section">
+                            <div class="container">
+                                <div class="col-lg-12">
+                                    <button class="icon"><i class="fa-solid fa-rocket"></i></button>
+                                </div>
+                                <div class="col-lg-12 mt-4 box-title">
+                                    Impact
+                                </div>
+                                <div class="col-lg-12 mt-2">
+                                    <p class="box-description">Creating solutions that make a real difference</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

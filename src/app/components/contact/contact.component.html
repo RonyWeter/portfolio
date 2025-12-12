@@ -1,0 +1,101 @@
+<div class="contact-section">
+    <div class="container">
+        <div class="row margin">
+            <div class="col-lg-12">
+                <label>Get In Touch</label>
+            </div>
+        </div>
+        <div class="row mt-4 title" style="height: 100%;margin-bottom: 5%;">
+            <div class="col-lg-6" #titleSection [ngClass]="{ 'hidden-before-visible': !titleSection_isVisible, 'visible slide-from-left': titleSection_isVisible }">
+                <div class="col-lg-12 buttomText">
+                    <h1>Let's build something</h1>
+                </div>
+                <div class="col-lg-12">
+                    <h1 class="digital">amazing together</h1>
+                </div>
+                <div class="col-lg-12" style="margin-top: 10%;">
+                    <p class="about-description">Have a project in mind or just want to chat? I'm always open to
+                        discussing new opportunities, creative ideas, or ways to help bring your vision to life.</p>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <div class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Email</div>
+                            <div class="value">roniweter@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-12 mt-4">
+                    <div class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Phone</div>
+                            <div class="value"><a href="tel:+96171644187"></a></div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-12 mt-4">
+                    <div class="contact-item" style="display: flex; align-items: center; gap: 10px;">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <div class="label">Phone</div>
+                            <div class="value">
+                                <a href="tel:+96171644187">+961 71 644 187</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4" style="margin-top: 10%;">
+                    <button mat-raised-button class="download" (click)="downloadCV()">
+                        Download Resume
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" #contactSection [ngClass]="{ 'hidden-before-visible': !contactSection_isVisible, 'visible slide-from-right': contactSection_isVisible }">
+                <div class="contact-box">
+                    <form [formGroup]="contactForm" class="form-container">
+
+                        <div class="col-lg-12 mt-4">
+                            <label>Email Address</label>
+                            <input type="text" formControlName="email" class="styled-input"
+                                placeholder="john@example.com">
+                        </div>
+
+                        <div class="col-lg-12 mt-4">
+                            <label>Subject</label>
+                            <input type="text" formControlName="subject" class="styled-input"
+                                placeholder="Project subject">
+                        </div>
+
+                        <div class="col-lg-12 mt-4">
+                            <label>Your Message</label>
+                            <textarea formControlName="message" class="styled-textarea"
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div class="col-lg-12 mt-4">
+                            <button mat-raised-button class="sendMessage" (click)="sendMessage()">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="custom-footer">
+        <div class="footer-left">
+            <p>© 2025 powered by <span class="highlight">Rony El Weter</span> |
+                <i class="fa-solid fa-phone fa-sm"></i> +961 71-644187
+            </p>
+        </div>
+    </footer>
+</div>

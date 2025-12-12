@@ -1,0 +1,54 @@
+<mat-toolbar class="toolbar">
+  <div class="title">
+    <img src="../assets/images/main.jpeg" alt="Avatar" class="avatar" />
+    <label>
+      <span class="title_name">Rony El Weter</span>
+    </label>
+  </div>
+  <div class="menu_actions_website">
+    <span (click)="scrollTo('about')">About</span>
+    <span (click)="scrollTo('projects')">Projects</span>
+    <span (click)="scrollTo('skills')">Skills</span>
+    <span (click)="scrollTo('contact')">Contact</span>
+    <button mat-raised-button (click)="scrollTo('contact')">Hire Me</button>
+  </div>
+  <div class="menu_actions_mobile">
+    <i class="fa-solid fa-x" style="cursor: pointer;" *ngIf="menuValue == 'close'" (click)="changeMenu()"></i>
+    <i class="fa-solid fa-bars" style="cursor: pointer;" *ngIf="menuValue == 'menu'" (click)="changeMenu()"></i>
+  </div>
+</mat-toolbar>
+<div class="mobileMenuSection scroll-down" *ngIf="menuValue == 'close'">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-lg-12 menuItem me-4">
+        <span (click)="scrollTo('about')">About</span>
+      </div>
+      <div class="col-lg-12 menuItem me-4">
+        <span (click)="scrollTo('projects')">Projects</span>
+      </div>
+      <div class="col-lg-12 menuItem me-4">
+        <span (click)="scrollTo('skills')">Skills</span>
+      </div>
+      <div class="col-lg-12 menuItem me-4">
+        <span (click)="scrollTo('contact')">Contact</span>
+      </div>
+    </div>
+    <hr>
+    <div class="row mt-2" style="width: 100%;">
+      <div class="col-lg-12 mb-4" style="width: 100%;">
+        <button mat-raised-button style="width: 100%;" (click)="scrollTo('contact')">
+          Hire Me
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <main style="height: 100%;display: flex;"></main>
+  <about id="about" style="display: flex;"></about>
+  <projects id="projects" style="display: flex;"></projects>
+  <skills id="skills" style="display: flex;"></skills>
+  <contact id="contact" style="display: flex;"></contact>
+</div>
+<ngx-ui-loader></ngx-ui-loader>
+<router-outlet></router-outlet>

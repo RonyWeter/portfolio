@@ -1,0 +1,118 @@
+<div class="skills-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" style="margin-top: 10%;">
+                <label>Technical Expertise</label>
+            </div>
+            <div class="col-lg-12 text-center mt-4">
+                <h1>Skills & Technologies</h1>
+            </div>
+            <div class="col-lg-12 text-center mt-4">
+                <p class="skills-title-description">A diverse toolkit honed through years of building production-grade
+                    applications</p>
+            </div>
+        </div>
+        <div class="row mt-4" style="margin-bottom: 5%;" #skillsBox>
+            <div class="col-lg-4 mb-4"
+                [ngClass]="{ 'hidden-before-visible': !skillsBox_isVisible, 'visible scroll-up': skillsBox_isVisible }">
+                <div class="skill-section">
+                    <div class="col-lg-12 mt-2">
+                        <span class="sill-title">Frontend</span>
+                    </div>
+                    <div class="col-lg-12 mt-4" class="BList">
+                        <button class="skill-button">Angular</button>
+                        <button class="skill-button">TypeScript</button>
+                        <button class="skill-button">BootStrap</button>
+                        <button class="skill-button">Angular Material</button>
+                        <button class="skill-button">CSS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4"
+                [ngClass]="{ 'hidden-before-visible': !skillsBox_1_isVisible, 'visible scroll-up': skillsBox_1_isVisible }">
+                <div class="skill-section">
+                    <div class="col-lg-12 mt-2">
+                        <span class="sill-title">Backend</span>
+                    </div>
+                    <div class="col-lg-12 mt-4" class="BList">
+                        <button class="skill-button">Java</button>
+                        <button class="skill-button">Spring Boot</button>
+                        <button class="skill-button">Node.js</button>
+                        <button class="skill-button">PostgreSQL</button>
+                        <button class="skill-button">PL/SQL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4"
+                [ngClass]="{ 'hidden-before-visible': !skillsBox_2_isVisible, 'visible scroll-up': skillsBox_2_isVisible }">
+                <div class="skill-section">
+                    <div class="col-lg-12 mt-2">
+                        <span class="sill-title">Tools</span>
+                    </div>
+                    <div class="col-lg-12 mt-4" class="BList">
+                        <button class="skill-button">Git</button>
+                        <button class="skill-button">Figma</button>
+                        <button class="skill-button">Svn</button>
+                        <button class="skill-button">Postman</button>
+                        <button class="skill-button">Swagger</button>
+                        <button class="skill-button">Web Services Api</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="color: #d3d3d3ba;margin-bottom: 5%;">
+        <!-- <div class="row" style="margin-bottom: 5%;" #skills [ngClass]="{ 'hidden-before-visible': !skills_isVisible, 'fade-in': skills_isVisible }">
+            <div class="col-lg-3 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">4+</span>
+                    <span class="skill-desc">Years Experience</span>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Projects Completed</span>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Technologies</span>
+                </div>
+            </div>
+        </div> -->
+        <div class="row" style="margin-bottom: 5%;" #skills
+            [ngClass]="{ 'hidden-before-visible': !skills_isVisible, 'fade-in': skills_isVisible }">
+            <div class="col-6 col-md-6 col-lg-3 mb-4 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">4+</span>
+                    <span class="skill-desc">Years Experience</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 mb-4 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Projects Completed</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 mb-4 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 mb-4 text-center skill-box">
+                <div class="skill-content">
+                    <span class="skill-number">10+</span>
+                    <span class="skill-desc">Technologies</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

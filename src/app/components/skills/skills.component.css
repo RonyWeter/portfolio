@@ -1,0 +1,97 @@
+.skills-section {
+    background: radial-gradient(ellipse at center, #0f172a, #0a0f1c);
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: var(--violet-color);
+    font-size: x-large;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+    color: white;
+}
+
+.skills-title-description {
+    color: rgb(223 223 223 / 80%);
+    font-size: clamp(1.5rem, 1vw, 1rem);
+    line-height: 1.2;
+}
+
+.skill-section {
+    background-color: #c0c0c01a;
+    border-radius: 12px;
+    border: 1px solid #80808057;
+    width: 100%;
+    height: 100%;
+    min-height: 225px;
+    padding: 20px;
+}
+
+.sill-title {
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+}
+
+.BList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.skill-button {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* subtle glassy effect */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: unset;
+}
+
+.skill-button:hover {
+    font-weight: 500;
+    border-color: var(--blue-color);
+}
+
+
+.skill-box {
+    color: white;
+    padding: 20px;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* controls the vertical space */
+}
+
+.skill-number {
+    font-weight: bold;
+    font-size: clamp(3rem, 2vw, 2rem);
+    color: var(--violet-color);
+}
+
+.skill-desc {
+    letter-spacing: 1px;
+    color: rgb(223 223 223 / 60%);
+    font-size: clamp(1.5rem, 1vw, 1rem);
+    line-height: 1.2;
+}
+
+/* website */
+@media(min-width: 920px) {
+    .buttomText {
+        margin-bottom: 2rem
+    }
+}

@@ -1,0 +1,32 @@
+<div class="main-section" #mainSection>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4" [ngClass]="{ 'scroll-down': isVisible }" style="margin-top: 4rem !important;">
+                <button class="available">
+                    <i class="fa-solid fa-circle animateIcon"></i>
+                    Available for opportunities
+                </button>
+            </div>
+            <div class="col-lg-12 mt-4 mb-4 title" [ngClass]="{ 'fade-in': isVisible }">
+                <h1 style="color: white;">Software</h1>
+            </div>
+            <div class="col-lg-12 mt-2 mb-4 title" [ngClass]="{ 'fade-in': isVisible }">
+                <span class="gradient-text">Developer</span>
+            </div>
+            <div class="col-lg-12 mt-4 mb-4 text-start" [ngClass]="{ 'fade-in': isVisible }">
+                <p class="narrow-paragraph">
+                    I craft elegant digital experiences through clean code and thoughtful design. Passionate about
+                    building products that make a difference.
+                </p>
+            </div>
+            <div class="col-lg-12 mt-4 mb-4 buttons" [ngClass]="{ 'scroll-up': isVisible }">
+                <button mat-raised-button class="view" (click)="viewWork()">View My Work</button>
+                <button class="icons" (click)="openLinkedIn()"><i class="fa-brands fa-linkedin-in"></i></button>
+                <button class="icons" (click)="sendEmail()"><i class="fa-solid fa-envelope"></i></button>
+            </div>
+            <div class="col-lg-12 text-center" style="margin-top: 8% !important;">
+                <button class="icons animate-button"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,146 @@
+    html,
+    body {
+        height: 100%;
+        /* margin: 0; */
+        /* padding: 0; */
+        scrollbar-width: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    :root {
+        /* --primary-color: rgba(2, 6, 23); */
+        --light-white-background: #f0f2fa69;
+        --primary-color: #0f172a;
+        --violet-color: rgb(198, 179, 253);
+        --blue-color: #5a6bff;
+        --light-blue-color: #7784ff;
+        --silver-color: rgb(223, 223, 223);
+        --light-text: rgba(214, 214, 214, 0.7);
+        --green-check-color: rgb(11, 219, 11);
+        --main-background: #020617, #0f172a, #1e1b4b;
+    }
+
+    .scroll-down {
+        animation: scrollDown 1.2s ease-out forwards;
+        position: relative;
+        opacity: 0;
+    }
+
+    @keyframes scrollDown {
+        0% {
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .scroll-up {
+        animation: scrollUp 1.2s ease-out forwards;
+        position: relative;
+        opacity: 0;
+    }
+
+    @keyframes scrollUp {
+        0% {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 2s ease-in forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .slide-from-left {
+        animation: slideInFromLeft 1.2s ease forwards;
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .slide-from-right {
+        animation: slideInFromRight 1.2s ease forwards;
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    .section {
+        background-color: white;
+        padding: 20px;
+        height: 100%;
+        border: 1px solid rgba(204, 204, 204, 0.4);
+        border-radius: 10px;
+        min-height: 225px;
+        cursor: pointer;
+    }
+
+    .section:hover {
+        border-color: var(--violet-color);
+        box-shadow: 0px 1px 4px 0px var(--violet-color);
+    }
+
+    .section:hover .icon {
+        transform: scale(1.2);
+        transition: transform 0.6s ease;
+    }
+
+
+    .hidden-before-visible {
+        opacity: 0;
+        transform: translateY(20px);
+        /* transition: all 100s ease; */
+    }
+
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mdc-snackbar__surface {
+        background: linear-gradient(135deg, #7b4dff, #9d6aff) !important;
+        text-align: center !important;
+    }
+
+    .mat-mdc-snack-bar-label .mdc-snackbar__label {
+        font-size: large !important;
+        font-weight: 500 !important;
+    }
