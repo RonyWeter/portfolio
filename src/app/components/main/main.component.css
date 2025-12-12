@@ -108,3 +108,16 @@
     top: -10px; /* Move up */
   }
 }
+
+
+@media(min-width: 920px) {
+    .margin{
+        margin-top: 2%;
+    }
+}
+
+@media(max-width: 920px) {
+    .margin{
+        margin-top: 8%;
+    }
+}
