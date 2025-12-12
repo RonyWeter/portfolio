@@ -115,10 +115,20 @@
         margin-top: 2%;
         margin-bottom: 4rem !important;
     }
+    .availableTop{
+      margin-top: 5rem !important;
+    }
 }
 
+
+/* mobile */
 @media(max-width: 920px) {
     .margin{
         margin-top: 8%;
+        margin-bottom: 2rem !important;
+    }
+
+    .availableTop{
+      margin-top: 1rem !important;
     }
 }

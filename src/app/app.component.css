@@ -103,6 +103,10 @@ label {
   .menu_actions_website {
     display: none;
   }
+
+  .main{
+    display: flex
+  }
 }
 
 /* website */
@@ -112,6 +116,11 @@ label {
   }
   .mobileMenuSection{
     display: none;
+  }
+
+  .main{
+    display: flex;
+    height: 100%;
   }
 }
 
