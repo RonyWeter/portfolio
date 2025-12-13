@@ -14,29 +14,29 @@
                 modern, scalable applications across
                 various domains.</p>
         </div>
-        <div class="row mt-4" #eKycSection [ngClass]="{ 'hidden-before-visible': !eKycSection_isVisible, 'visible scroll-up': eKycSection_isVisible }">
+        <div class="row mt-4" #loanSection [ngClass]="{ 'hidden-before-visible': !loanSection_isVisible, 'visible scroll-up': loanSection_isVisible }">
             <div class="col-lg-6 mb-4">
-                <img src="assets/images/e-kyc.jpg">
+                <img src="assets/images/loan-image.jpg">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-4">
                 <div class="row mt-2">
-                    <span class="selectedWork">Full-Stack Application</span>
+                    <span class="selectedWork">Front-End Development</span>
                 </div>
                 <div class="row mt-3">
-                    <span class="projectName">E-KYC Platform</span>
+                    <span class="projectName">Bank Loan Management System</span>
                 </div>
                 <div class="row mt-3">
-                    <p class="project-description">A secure and user-friendly online KYC system that enables customers
-                        to open bank accounts
-                        remotely. The platform allows users to fill in personal information, upload identification
-                        documents (ID or passport), and capture a live selfie for identity verification. Additionally,
-                        users can upload an image of their signature to complete the verification process.
-                        Built with a focus on security, smooth user experience, and efficient data processing for
-                        banking compliance.</p>
+                    <p class="project-description">As a Senior Front-End Developer, I contributed to building a robust
+                        and user-friendly loan management platform for a leading bank. This system streamlines the
+                        entire loan application process — from user onboarding and eligibility checks to document
+                        submission and loan tracking. I focused on delivering a smooth, responsive user interface that
+                        ensures a seamless experience across devices. The platform emphasizes clarity, performance, and
+                        accessibility, supporting both customers and bank staff in managing loan applications
+                        efficiently and securely.</p>
                 </div>
                 <div class="row mt-2 gx-3">
-                    <div class="col-auto" *ngFor="let item of ekycList">
-                        <button mat-raised-button class="projectSkills">{{ item }}</button>
+                    <div class="col-auto" *ngFor="let item of loanList">
+                        <button mat-raised-button class="projectSkills mb-2">{{ item }}</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,34 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4" #carSection [ngClass]="{ 'hidden-before-visible': !carSection_isVisible, 'visible scroll-up': carSection_isVisible }">
+        <div class="row mt-4" #eKycSection [ngClass]="{ 'hidden-before-visible': !eKycSection_isVisible, 'visible scroll-up': eKycSection_isVisible }">
+            <div class="col-lg-6 mb-4">
+                <img src="assets/images/e-kyc.jpg">
+            </div>
+            <div class="col-lg-6">
+                <div class="row mt-2">
+                    <span class="selectedWork">Full-Stack Application</span>
+                </div>
+                <div class="row mt-3">
+                    <span class="projectName">E-KYC Platform</span>
+                </div>
+                <div class="row mt-3">
+                    <p class="project-description">A secure and user-friendly online KYC system that enables customers
+                        to open bank accounts
+                        remotely. The platform allows users to fill in personal information, upload identification
+                        documents (ID or passport), and capture a live selfie for identity verification. Additionally,
+                        users can upload an image of their signature to complete the verification process.
+                        Built with a focus on security, smooth user experience, and efficient data processing for
+                        banking compliance.</p>
+                </div>
+                <div class="row mt-2 gx-3">
+                    <div class="col-auto" *ngFor="let item of ekycList">
+                        <button mat-raised-button class="projectSkills">{{ item }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" style="margin-bottom: 5rem;" #carSection [ngClass]="{ 'hidden-before-visible': !carSection_isVisible, 'visible scroll-up': carSection_isVisible }">
             <div class="col-lg-6 mb-4">
                 <img src="assets/images/image.png">
             </div>
@@ -99,33 +126,6 @@
                         <button mat-raised-button class="accessProject" (click)="openProject()">
                             View Project
                         </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4" style="margin-bottom: 5rem;" #loanSection [ngClass]="{ 'hidden-before-visible': !loanSection_isVisible, 'visible scroll-up': loanSection_isVisible }">
-            <div class="col-lg-6 mb-4">
-                <img src="assets/images/loan-image.jpg">
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="row mt-2">
-                    <span class="selectedWork">Front-End Development</span>
-                </div>
-                <div class="row mt-3">
-                    <span class="projectName">Bank Loan Management System</span>
-                </div>
-                <div class="row mt-3">
-                    <p class="project-description">As a Senior Front-End Developer, I contributed to building a robust
-                        and user-friendly loan management platform for a leading bank. This system streamlines the
-                        entire loan application process — from user onboarding and eligibility checks to document
-                        submission and loan tracking. I focused on delivering a smooth, responsive user interface that
-                        ensures a seamless experience across devices. The platform emphasizes clarity, performance, and
-                        accessibility, supporting both customers and bank staff in managing loan applications
-                        efficiently and securely.</p>
-                </div>
-                <div class="row mt-2 gx-3">
-                    <div class="col-auto" *ngFor="let item of loanList">
-                        <button mat-raised-button class="projectSkills mb-2">{{ item }}</button>
                     </div>
                 </div>
             </div>
