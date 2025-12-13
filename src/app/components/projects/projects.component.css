@@ -70,18 +70,17 @@ img:hover {
 .skill-button {
     /* background-color: rebeccapurple; */
     /* color: #fff; */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rebeccapurple !important;
     border-radius: 8px;
     padding: 8px 16px;
     font-size: 16px;
     cursor: unset;
-    border-color: rebeccapurple;
-    background-color: white;
-    color: rebeccapurple;
+    border-color: rebeccapurple !important;
+    background-color: white !important;
 }
 
 .skill-button:hover {
-    border-color: white;
-    background-color: rebeccapurple;
-    color: white;
+    border-color: white !important;
+    background-color: rebeccapurple !important;
+    color: white !important;
 }
