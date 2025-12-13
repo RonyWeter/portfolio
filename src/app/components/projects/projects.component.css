@@ -68,8 +68,6 @@ img:hover {
 
 
 .skill-button {
-    /* background-color: rebeccapurple; */
-    /* color: #fff; */
     border: 1px solid rebeccapurple !important;
     border-radius: 8px;
     padding: 8px 16px;
@@ -78,9 +76,3 @@ img:hover {
     background-color:  rebeccapurple !important ;
     color: white;
 }
-
-/* .skill-button:hover {
-    border-color: white !important;
-    background-color: rebeccapurple !important;
-    color: white !important;
-} */
