@@ -75,12 +75,12 @@ img:hover {
     padding: 8px 16px;
     font-size: 16px;
     cursor: unset;
-    background-color: white !important;
-    color: rebeccapurple;
+    background-color:  rebeccapurple !important ;
+    color: white;
 }
 
-.skill-button:hover {
+/* .skill-button:hover {
     border-color: white !important;
     background-color: rebeccapurple !important;
     color: white !important;
-}
+} */
