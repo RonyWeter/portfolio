@@ -112,11 +112,10 @@
 
 @media(min-width: 920px) {
     .margin{
-        margin-top: 2%;
         margin-bottom: 4rem !important;
     }
     .availableTop{
-      margin-top: 5rem !important;
+      margin-top: 1rem !important;
     }
 }
 
